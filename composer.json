@@ -1,0 +1,17 @@
+{
+    "name": "prosa/projeto01",
+    "description": "Um projeto completo em MVC para um PetShop",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "PetShop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro Miguel da Rosa",
+            "email": "pr006453@cfjl.com.br"
+        }
+    ],
+    "require": {}
+}
