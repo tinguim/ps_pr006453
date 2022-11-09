@@ -4,3 +4,18 @@ Stack trace:
 #1 C:\xampp\htdocs\projeto01\public\index.php(8): PetShop\Core\DAO->__set('titulo', '')
 #2 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Model\Dica.php on line 41
+[08-Nov-2022 21:45:50 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:45:50 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:45:54 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:45:54 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:48:21 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:48:21 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:49:30 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:49:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:50:11 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:50:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:50:57 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 108
+[08-Nov-2022 21:50:57 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
+[08-Nov-2022 21:50:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
+[08-Nov-2022 21:51:08 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
+[08-Nov-2022 21:51:08 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109

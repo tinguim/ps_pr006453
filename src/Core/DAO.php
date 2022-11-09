@@ -6,35 +6,12 @@ use PetShop\Core\Attribute\Entidade;
 
 class DAO 
 {
-    /**
-     * Função que objetiva retornar as metainformações da classe, baseando-se nas leituras do atributos
-     *
-     * @return array Propriedades da Entidade (tabela e campos)
-     */
-    public function getTableInfo() : array
+    /** @var array Informações da tabela/campos carregados */
+    private $tableInfo = [];
+
+    public function __construct()
     {
-        //vetor que armazenará as informações da classe referente a tabelas e campos do banco de dados
-        $info = [];
-
-        //pegando as metainformações da classe referente ao objeto atual instanciado
-        $ref = new \ReflectionClass($this::class);
-        foreach($ref->getAttributes(Entidade::class) as $attrTable) {
-            $info['tabela'] = $attrTable->getArguments();
-
-            //procurando as metainformações das propriedades da classe
-            foreach($ref->getProperties() as $propriedade) {
-                //para cada campo/prop localizada, procura seus atributos
-                foreach($propriedade->getAttributes(Campo::class) as $attrCampo) {
-                    $info['campos'][$propriedade->getName()] = $attrCampo->getArguments();
-                }
-            }
-        }
-
-        if (!isset($info['tabela']) || !isset($info['campos'])) {
-            throw new Exception('Os atributos da classe/propriedades não foram preenchidos!');
-        }
-
-        return $info;
+        $this->tableInfo = $this->getTableInfo();
     }
 
     /**
@@ -68,5 +45,86 @@ class DAO
         } else {
             throw new exception("O atributo {$name} não tem método 'set'associado");
         }
+    }
+
+    /**
+     * Função que objetiva retornar as metainformações da classe, baseando-se nas leituras do atributos
+     *
+     * @return array Propriedades da Entidade (tabela e campos)
+     */
+    public function getTableInfo() : array
+    {
+        //vetor que armazenará as informações da classe referente a tabelas e campos do banco de dados
+        $info = [];
+
+        //pegando as metainformações da classe referente ao objeto atual instanciado
+        $ref = new \ReflectionClass($this::class);
+        foreach($ref->getAttributes(Entidade::class) as $attrTable) {
+            $info['tabela'] = $attrTable->getArguments();
+
+            //procurando as metainformações das propriedades da classe
+            foreach($ref->getProperties() as $propriedade) {
+                //para cada campo/prop localizada, procura seus atributos
+                foreach($propriedade->getAttributes(Campo::class) as $attrCampo) {
+                    $info['campos'][$propriedade->getName()] = $attrCampo->getArguments();
+                }
+            }
+        }
+
+        if (!isset($info['tabela']) || !isset($info['campos'])) {
+            throw new Exception('Os atributos da classe/propriedades não foram preenchidos!');
+        }
+
+        return $info;
+    }
+
+    /**
+     * Retorna o nome da tabela da classe instanciada
+     *
+     * @return string
+     */
+    public function getTableName() : string
+    {
+        return $this->tableInfo['tabela']['name'];
+    }
+
+    /**
+     * Retorna informações dos campos/prop da classe associada
+     *
+     * @return array
+     */
+    public function getFields() : array
+    {
+        return $this->tableInfo['campos'];
+    }
+
+    /**
+     * Retorna o nome do campo chave da tabela associada a classe atual
+     *
+     * @return string
+     */
+    public function getPkName() : string
+    {
+        foreach($this->tableInfo['campos'] as $cname => $cprops) {
+            if (array_key_exists('pk', $cprops)) {
+                return strtolower($cname);
+            }
+        }
+        return '';
+    }
+
+    /**
+     * Retorna o nome do campo de ordenação padrão
+     * 
+     * @return string
+     */
+    public function getOrderByFields() : string
+    {
+        foreach($this->tableInfo['campos'] as $cname => $cprops) {
+            if (array_key_exists('order', $cprops)) {
+                return strtolower($cname);
+            }
+        }
+        return '';
     }
 }
