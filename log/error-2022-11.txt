@@ -1,0 +1,6 @@
+[08-Nov-2022 20:43:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: Título Inválido! in C:\xampp\htdocs\projeto01\src\Model\Dica.php:41
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(33): PetShop\Model\Dica->setTitulo('')
+#1 C:\xampp\htdocs\projeto01\public\index.php(8): PetShop\Core\DAO->__set('titulo', '')
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Dica.php on line 41
