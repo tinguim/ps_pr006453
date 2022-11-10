@@ -19,3 +19,4 @@ Stack trace:
 [08-Nov-2022 21:50:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
 [08-Nov-2022 21:51:08 America/Sao_Paulo] PHP Warning:  Undefined array key "campos" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
 [08-Nov-2022 21:51:08 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 109
+[10-Nov-2022 16:09:01 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 159
