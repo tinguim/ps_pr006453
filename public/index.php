@@ -6,7 +6,6 @@ use PetShop\Model\Dica;
 
     $dica = new Dica();
     $dica->loadById(1);
-    echo $dica->iddica . PHP_EOL;
-    echo $dica->titulo . PHP_EOL;
-    echo $dica->descricao . PHP_EOL;
-    echo $dica->created_at . PHP_EOL;
+    $dica->descricao = "Nova descrição da dica";
+    $dica->titulo = "Novo titulo da dica";
+    $dica->save();

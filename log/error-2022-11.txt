@@ -38,3 +38,55 @@ Stack trace:
 #1 C:\xampp\htdocs\projeto01\public\index.php(8): PetShop\Core\DAO->loadById(1)
 #2 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 47
+[10-Nov-2022 19:26:56 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O campo titulo deve ser preenchido! in C:\xampp\htdocs\projeto01\src\Core\DAO.php:218
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(9): PetShop\Core\DAO->save()
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 218
+[10-Nov-2022 19:40:29 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O campo Título deve ser preenchido! in C:\xampp\htdocs\projeto01\src\Core\DAO.php:219
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(9): PetShop\Core\DAO->save()
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 219
+[10-Nov-2022 19:40:51 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica',' at line 1 - Linha: 80
+[10-Nov-2022 19:40:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[10-Nov-2022 19:42:06 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica',' at line 1 - Linha: 80
+[10-Nov-2022 19:42:06 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[10-Nov-2022 19:43:01 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica'' at line 1 - Linha: 80
+[10-Nov-2022 19:43:03 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[10-Nov-2022 19:44:18 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica'' at line 1 - Linha: 80
+[10-Nov-2022 19:44:18 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[10-Nov-2022 19:45:04 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica'' at line 1 - Linha: 80
+[10-Nov-2022 19:45:04 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[10-Nov-2022 19:49:42 America/Sao_Paulo] Erro PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Novo titulo da dica', 'Nova descrição da dica'' at line 1 - Linha: 80 - INSERT INTO dicas (titulo, descricao) VALUES ?, ?
+[10-Nov-2022 19:49:42 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:87
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(233): PetShop\Core\DB::query('INSERT INTO dic...', Array)
+#1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
+#2 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87

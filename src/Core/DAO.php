@@ -194,4 +194,61 @@ class DAO
 
         return true;
     }
+     
+    /**
+     * Método que, com todos atributos obrigatórios alimentados salva os dados no banco de dados,
+     * se houver ID informado, então atualiza um registro, senão, cria
+     *
+     * @return void
+     */
+    public function save() : bool
+    {
+        $nomeDaTabela = $this->getTableName();
+        $nomeCampoChave = $this->getPkName();
+        $valorCampoChave = $this->$nomeCampoChave;
+
+        $campos = [];
+        foreach($this->getFields() as $atributo => $parametros) {
+            if (array_key_exists('auto', $parametros)) {
+                continue;
+            }
+
+            //verificar se o campo atual está nulo e é um not null (NN)
+            if (is_null($this->$atributo) && array_key_exists('nn', $parametros)) {
+                $label = $parametros['label'];
+                throw new Exception("O campo {$label} deve ser preenchido!");
+            }
+
+            $campos[strtolower($atributo)] = $this->$atributo;
+        }
+
+        //Se não tiver valor no atributo do campo chave, será feito um insert, pois não é conhecido
+        if (empty($valorCampoChave)) {
+            $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)',
+            $nomeDaTabela,
+            implode(', ', array_keys($campos)),
+            trim(str_repeat('?, ', count($campos)), ', ')
+        );
+
+        DB::query($sql, $campos);
+
+        $this->loadById(DB::getInstance()->lastInsertId());
+
+        return true;
+        }
+
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %s = %s',
+            $nomeDaTabela,
+            implode('=?, ', array_keys($campos)) . '=?',
+            $nomeCampoChave,
+            $valorCampoChave
+        );
+        
+        DB::query($sql, $campos);
+
+        $this->loadById($valorCampoChave);
+
+        return true;
+    }
 }

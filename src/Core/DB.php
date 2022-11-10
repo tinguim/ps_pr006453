@@ -83,7 +83,7 @@ class DB
             }
             return $st;
         } catch (\PDOException $e) {
-            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine());
+            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine() . ' - ' . $sql);
             throw new Exception('Falha ao executar comando no banco de dados!');
         }
     }
