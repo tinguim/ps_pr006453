@@ -1,34 +1,39 @@
 <?php
 namespace PetShop\Model;
 
-//cidades
-class Cidade 
+use Exception;
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
+use PetShop\Core\DAO;
+
+#[Entidade(name: 'cidades')]
+class Cidade extends DAO
 {
-    //Código da Cidade, pk, nn, auto
+    #[Campo(label:'Código da Cidade', nn:true, pk:true, auto:true)]
     protected $idCidade;
 
-    //UF da Cidade, nn
+    #[Campo(label:'UF da Cidade', nn:true)]
     protected $uf;
 
-    //IBGE da Cidade, nn
+    #[Campo(label:'IBGE da Cidade', nn:true)]
     protected $ibge;
 
-    //IBGE7 da Cidade, nn
+    #[Campo(label:'IBGE7 da Cidade', nn:true)]
     protected $ibge7;
 
-    //Município da Cidade, nn
+    #[Campo(label:'Município da Cidade', nn:true, order:true)]
     protected $municipio;
 
-    //Região da Cidade, nn
+    #[Campo(label:'Região da Cidade', nn:true)]
     protected $regiao;
 
-    //População da Cidade, nn
+    #[Campo(label:'População da Cidade', nn:true)]
     protected $populacao;
 
-    //Porte da Cidade, nn
+    #[Campo(label:'Porte da Cidade', nn:true)]
     protected $porte;
 
-    //Capital da Cidade, nn
+    #[Campo(label:'Capital da Cidade', nn:true)]
     protected $capital;
 
     public function getIdCidade()

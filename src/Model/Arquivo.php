@@ -1,31 +1,36 @@
 <?php
 namespace PetShop\Model;
 
-//arquivos
-class Arquivo
+use Exception;
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
+use PetShop\Core\DAO;
+
+#[Entidade(name: 'arquivos')]
+class Arquivo extends DAO
 {
-    //Código Arquivo, pk, nn, auto
+    #[Campo(label:'Código do Arquivo', nn:true, pk:true, auto:true)]
     protected $idArquivo;
 
-    //Nome do Arquivo, nn
+    #[Campo(label:'Nome da Arquivo', nn:true, order:true)]
     protected $nome;
 
-    //Tipo do Arquivo, nn
+    #[Campo(label:'Tipo do Arquivo', nn:true)]
     protected $tipo;
 
-    //Descrição do Arquivo
+    #[Campo(label:'Descrição do Arquivo', nn:true)]
     protected $descricao;
 
-    //Tabela do Arquivo
+    #[Campo(label:'Tabela do Arquivo')]
     protected $tabela;
 
-    //Código da Tabela do Arquivo
+    #[Campo(label:'Código da Tabela do Arquivo')]
     protected $tabelaId;
 
-    //Data de Criação, nn, auto
+    #[Campo(label:'Data de Criação', nn:true, auto:true)]
     protected $created_at;
 
-    //Data de Alteração, nn, auto
+    #[Campo(label:'Data de Alteração', nn:true, auto:true)]
     protected $updated_at;
 
     public function getIdArquivo()

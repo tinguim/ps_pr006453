@@ -1,19 +1,24 @@
 <?php
 namespace PetShop\Model;
 
-//estados
-class Estado 
+use Exception;
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
+use PetShop\Core\DAO;
+
+#[Entidade(name: 'estados')]
+class Estado extends DAO
 {
-    //Código do Estado, pk, nn
+    #[Campo(label:'Código do Estado', nn:true, pk:true)]
     protected $idEstado;
 
-    //IBGE do Estado, nn
+    #[Campo(label:'IBGE do Estado', nn:true)]
     protected $ibge;
 
-    //Estado, nn
+    #[Campo(label:'Estado', nn:true, order:true)]
     protected $estado;
 
-    //Região do Estado, nn
+    #[Campo(label:'Região do Estado', nn:true)]
     protected $regiao;
 
     public function getIdEstado()
