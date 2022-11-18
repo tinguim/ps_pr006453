@@ -1,31 +1,37 @@
 <?php
 namespace PetShop\Model;
 
-//clientes
-class Cliente 
+use Exception;
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
+use PetShop\Core\DAO;
+use Respect\Validation\Validador as v;
+
+#[Entidade(name: 'clientes')]
+class Cliente extends DAO
 {
-    //Código do cliente, pk, nn, auto
+    #[Campo(label:'Código do Cliente', nn:true, pk:true, auto:true)]
     protected $idCliente;
 
-    //Tipo de Cliente, nn
+    #[Campo(label:'Tipo de Cliente', nn:true)]
     protected $tipo;
 
-    //CPF/CNPJ do cliente, nn
+    #[Campo(label:'CPF/CNPJ do Cliente', nn:true)]
     protected $cpfCnpj;
 
-    //Nome do Cliente, nn
+    #[Campo(label:'Nome do Cliente', nn:true)]
     protected $nome;
 
-    //E-mail  do Cliente, nn
+    #[Campo(label:'E-mail do Cliente', nn:true)]
     protected $email;
 
-    //Senha do Cliente, nn
+    #[Campo(label:'Senha do Cliente', nn:true)]
     protected $senha;
 
-    //Data de Criação, nn, auto
+    #[Campo(label:'Data de Criação', nn:true, auto:true)]
     protected $created_at;
 
-    //Data de Alteração, nn, auto
+    #[Campo(label:'Data de Alteração', nn:true, auto:true)]
     protected $updated_at;
 
     public function getIdCliente()
@@ -38,8 +44,12 @@ class Cliente
         return $this->tipo;
     }
 
-    public function setTipo($tipo): self
+    public function setTipo(string $tipo): self
     {
+        $tipo = strtoupper(trim($tipo));
+        if (!in_array($tipo, ['F', 'J'])) {
+            throw new Exception('O tipo da pessoa não está definido corretamente (F, J)');
+        }
         $this->tipo = $tipo;
 
         return $this;
@@ -50,8 +60,21 @@ class Cliente
         return $this->cpfCnpj;
     }
 
-    public function setCpfCnpj($cpfCnpj): self
+    public function setCpfCnpj(string $cpfCnpj): self
     {
+        if (!in_array($this->tipo, ['F', 'J'])) {
+            throw new Exception('O tipo da pessoa precisa ser definido antes do documento!');
+        }
+
+        if ($this->tipo == 'F') {
+            $docValido = v::cpf()->validate($cpfCnpj);
+        } else {
+            $docValido = v::cnpj()->validate($cpfCnpj);
+        }
+
+        if (!$docValido) {
+            throw new Exception('O documento informado é inválido!');
+        }
         $this->cpfCnpj = $cpfCnpj;
 
         return $this;
@@ -62,7 +85,7 @@ class Cliente
         return $this->nome;
     }
 
-    public function setNome($nome): self
+    public function setNome(string $nome): self
     {
         $this->nome = $nome;
 
@@ -74,8 +97,14 @@ class Cliente
         return $this->email;
     }
 
-    public function setEmail($email): self
+    public function setEmail(string $email): self
     {
+        $email = strtolower(trim($email));
+
+        $emailValido = v::email()->validate($email);
+        if (!$emailValido) {
+            throw new Exception('O e-mail informado é inválido!');
+        }
         $this->email = $email;
 
         return $this;
@@ -86,8 +115,10 @@ class Cliente
         return $this->senha;
     }
 
-    public function setSenha($senha): self
+    public function setSenha(string $senha): self
     {
+        $hashDaSenha = hash_hmac('md5', $senha, SALT_SENHA);
+        $senha = password_hash($hashDaSenha, PASSWORD_DEFAULT);
         $this->senha = $senha;
 
         return $this;
