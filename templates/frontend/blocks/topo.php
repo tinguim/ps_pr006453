@@ -1,5 +1,5 @@
-<!--Hack para o topo fixo-->
-<div style="margin-top: 5.5;">&nbsp;</div>
+<!--Hack para o topo fixo não "comer" o conteúdo da página-->
+<div style="margin-top: 5.5em;">&nbsp;</div>
 <div class="topo-site fixed-top">
     <div class="container">
         <div class="topo-site-superior row pt-3 pb-1">
