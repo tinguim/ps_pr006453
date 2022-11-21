@@ -1,10 +1,22 @@
 <?php
 namespace PetShop\Controller;
 
-class HomeController
+use PetShop\Core\FrontController;
+use PetShop\Model\Estado;
+use PetShop\View\Render;
+
+class HomeController extends FrontController
 {
     public function index()
     {
-        echo 'Olá, mundo!';
+        $estados = ( new Estado() )->find();
+
+        $dados = [];
+        $dados['titulo'] = 'Lista de Estados';
+        $dados['estados'] = $estados;
+        $dados['topo'] = $this->carregaHTMLTopo();
+        $dados['rodape'] = $this->carregaHTMLRodape();
+
+        Render::front('home', $dados);
     }
 }
