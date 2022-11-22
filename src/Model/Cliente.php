@@ -5,7 +5,7 @@ use Exception;
 use PetShop\Core\Attribute\Campo;
 use PetShop\Core\Attribute\Entidade;
 use PetShop\Core\DAO;
-use Respect\Validation\Validador as v;
+use Respect\Validation\Validator as v;
 
 #[Entidade(name: 'clientes')]
 class Cliente extends DAO
