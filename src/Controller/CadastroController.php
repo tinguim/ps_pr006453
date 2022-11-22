@@ -2,7 +2,9 @@
 
 namespace PetShop\Controller;
 
+use Exception;
 use PetShop\Core\FrontController;
+use PetShop\Model\Cliente;
 use PetShop\View\Render;
 
 class CadastroController extends FrontController
@@ -16,6 +18,25 @@ class CadastroController extends FrontController
         $dados['formCadastro'] = $this->formCadastro();
 
         Render::front('cadastro', $dados);
+    }
+
+    public function postCadastro()
+    {
+        try {
+            $cliente = new Cliente;
+            $cliente->tipo = $_POST['tipo'] ?? null;
+            $cliente->cpfcnpj = $_POST['cpfcnpj'] ?? null;
+            $cliente->nome = $_POST['nome'] ?? null;
+            $cliente->email = $_POST['email'] ?? null;
+            $cliente->senha = $_POST['senha'] ?? null;
+            $cliente->save();
+        } catch (Exception $e) {
+            $_SESSION['mensagem'] = [
+                'tipo' => 'warning',
+                'texto' => $e->getMessage()
+            ];
+            $this->cadastro();
+        }
     }
 
     private function formCadastro()
@@ -38,7 +59,7 @@ class CadastroController extends FrontController
                 ['type' => 'password', 'class' => 'col-6', 'name' => 'senha2', 'label' => 'Confirme a senha', 'required' => true],
             ]
         ];
-        
+
         return Render::block('form', $dados);
     }
 }
