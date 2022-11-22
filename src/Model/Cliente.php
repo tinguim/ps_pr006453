@@ -117,6 +117,9 @@ class Cliente extends DAO
 
     public function setSenha(string $senha): self
     {
+        if (strlen($senha)<5) {
+            throw new Exception('O tamanho da senha é inválido! Digite ao menos cinco caracteres');
+        }
         $hashDaSenha = hash_hmac('md5', $senha, SALT_SENHA);
         $senha = password_hash($hashDaSenha, PASSWORD_DEFAULT);
         $this->senha = $senha;
@@ -124,12 +127,12 @@ class Cliente extends DAO
         return $this;
     }
 
-    public function getCreatedAt()
+    public function getCreated_At()
     {
         return $this->created_at;
     }
 
-    public function getUpdatedAt()
+    public function getUpdated_At()
     {
         return $this->updated_at;
     }

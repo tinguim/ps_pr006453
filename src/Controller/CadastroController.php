@@ -2,7 +2,7 @@
 
 namespace PetShop\Controller;
 
-use Exception;
+use PetShop\Core\Exception;
 use PetShop\Core\FrontController;
 use PetShop\Model\Cliente;
 use PetShop\View\Render;
@@ -29,6 +29,9 @@ class CadastroController extends FrontController
             $cliente->nome = $_POST['nome'] ?? null;
             $cliente->email = $_POST['email'] ?? null;
             $cliente->senha = $_POST['senha'] ?? null;
+            if ($_POST['senha'] != $_POST['senha2']) {
+                throw new Exception('O campo senha deve ser o mesmo na confirmação!');
+            }
             $cliente->save();
         } catch (Exception $e) {
             $_SESSION['mensagem'] = [
