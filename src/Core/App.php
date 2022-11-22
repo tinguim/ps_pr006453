@@ -49,5 +49,6 @@ class App
     private static function registaRotasDoFrontEnd()
     {
         self::$router->get('/', '\PetShop\Controller\HomeController@index');
+        self::$router->get('/login', '\PetShop\Controller\LoginController@login');
     }
 }
