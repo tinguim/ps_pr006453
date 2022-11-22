@@ -2,6 +2,7 @@
 namespace PetShop\Core;
 
 use Bramus\Router\Router;
+use PetShop\Controller\ErrorController;
 
 class App 
 {
@@ -24,8 +25,9 @@ class App
         self::$router = new Router();
 
         //registra as rotas possiveis
-        self::registaRotasDoBackEnd();
-        self::registaRotasDoFrontEnd();
+        self::registraRotasDoBackEnd();
+        self::registraRotasDoFrontEnd();
+        self::registra404Generico();
 
         //analisa a requesição e escolhe a rota compativel
         self::$router->run();
@@ -36,9 +38,23 @@ class App
      *
      * @return void
      */
-    private static function registaRotasDoBackEnd()
+    private static function registraRotasDoBackEnd()
     {
 
+    }
+
+     /**
+     * Registra rota genérica para erro de URL digitada
+     *
+     * @return void
+     */
+    private static function registra404Generico()
+    {
+        self::$router->set404(function() {
+            header('HTTP/1.1 404 Not Found');
+            $objErro = new ErrorController();
+            $objErro->erro404();
+        });
     }
 
     /**
@@ -46,7 +62,7 @@ class App
      *
      * @return void
      */
-    private static function registaRotasDoFrontEnd()
+    private static function registraRotasDoFrontEnd()
     {
         self::$router->get('/', '\PetShop\Controller\HomeController@index');
         self::$router->get('/login', '\PetShop\Controller\LoginController@login');
