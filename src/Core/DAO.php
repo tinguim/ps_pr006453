@@ -182,7 +182,7 @@ abstract class DAO
             return false;
         }
 
-        $this->idDica = $registro[0]['iddica'];
+        
 
         //THIS->FIND RETORNA UMA COLEÇÃO (VETOR), TEMOS QUE, PORTANTO ALIMENTAR O OBJETO
         //PROPRIEDADE POR PRIORIDADE A PARTIR DESTE VETOR RETORNADO
