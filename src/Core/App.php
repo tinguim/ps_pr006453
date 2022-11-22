@@ -21,6 +21,9 @@ class App
      */
     public static function start()
     {
+        //carrega uma sessao ou inicia uma nova em caso de novo acesso
+        self::carregaSessao();
+
         //associa um objeto Bramus/Router à váriavel $router
         self::$router = new Router();
 
@@ -67,5 +70,16 @@ class App
         self::$router->get('/', '\PetShop\Controller\HomeController@index');
         self::$router->get('/login', '\PetShop\Controller\LoginController@login');
         self::$router->get('/cadastro', '\PetShop\Controller\CadastroController@cadastro');
+        self::$router->post('/cadastro', '\PetShop\Controller\CadastroController@postCadastro');
+    }
+
+    /**
+     * Função que inicia uma nova sessão e, posteriormente, carrega o ID da sessão e grava no disporitivo do usuário
+     *
+     * @return void
+     */
+    private static function carregaSessao()
+    {
+        session_start();
     }
 }
