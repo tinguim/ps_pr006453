@@ -69,6 +69,7 @@ class App
     {
         self::$router->get('/', '\PetShop\Controller\HomeController@index');
         self::$router->get('/login', '\PetShop\Controller\LoginController@login');
+        self::$router->post('/login', '\PetShop\Controller\LoginController@postLogin');
         self::$router->get('/cadastro', '\PetShop\Controller\CadastroController@cadastro');
         self::$router->post('/cadastro', '\PetShop\Controller\CadastroController@postCadastro');
         self::$router->get('/meus-dados', '\PetShop\Controller\MeusDadosController@meusDados');
