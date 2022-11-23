@@ -42,6 +42,6 @@ function redireciona(string $destino, string $tipoMsg = '', string $mensagem = '
         ];
     }
 
-    header('location:/' . $destino);
+    header('location:' . $destino);
     exit;
 }
