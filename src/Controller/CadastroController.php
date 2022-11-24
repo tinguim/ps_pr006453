@@ -32,6 +32,10 @@ class CadastroController extends FrontController
             if ($_POST['senha'] != $_POST['senha2']) {
                 throw new Exception('O campo senha deve ser o mesmo na confirmação!');
             }
+            $resultado = $cliente->find(['email =' => $cliente->email]);
+            if (!empty($resultado)) {
+                throw new Exception('Endereço de e-mail já cadastrado, selecione recuperar senha se necessário');
+            }
             $cliente->save();
         } catch (Exception $e) {
             $_SESSION['mensagem'] = [
