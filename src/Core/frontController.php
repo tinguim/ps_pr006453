@@ -15,6 +15,11 @@ abstract class FrontController
     {
         $empresa = new Empresa;
         $dados = $empresa->find(['tipo ='=>'Matriz']);
+
+        if ( !empty($_SESSION['cliente'])) {
+            $dados[0]['cliente'] = $_SESSION['cliente'];
+        }
+
         return Render::block('topo', $dados[0]);
     }
 

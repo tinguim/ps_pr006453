@@ -56,7 +56,9 @@ class LoginController extends FrontController
             }
 
             $_SESSION['cliente'] = $dadosUsuario[0];
-
+            $nome = $_SESSION['cliente']['nome'];
+            $_SESSION['cliente']['prinome'] = substr($nome, 0, strpos($nome, ' '));
+            
             redireciona('/meus-dados');
         } catch (Exception $e) {
             $_SESSION['mensagem'] = [

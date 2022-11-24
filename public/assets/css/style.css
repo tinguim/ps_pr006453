@@ -28,6 +28,10 @@
     width: 3em;
 }
 
+.topo-site .dropdown-menu {
+    background-color: #231f20;
+}
+
 .rodape-site {
     background-color: #efe6dd;
     color: #777;
