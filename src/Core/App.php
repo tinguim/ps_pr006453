@@ -43,6 +43,7 @@ class App
      */
     private static function registraRotasDoBackEnd()
     {
+        self::$router->get('/admin', '\PetShop\Controller\AdminDashboardController@index');
 
     }
 
