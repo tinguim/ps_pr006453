@@ -9,7 +9,7 @@ class AdminDashboardController extends FrontController
     public function index()
     {
         $dados = [];
-        $dados['titulo'] = 'Início';
+        $dados['titulo'] = 'Dashboard';
 
         Render::back('dashboard', $dados);
     }

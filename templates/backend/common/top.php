@@ -21,15 +21,15 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand ps-3" href="/admin"><?= $nomesite??'' ?></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
             <i class="fas fa-bars"></i>
         </button>
         <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        <form action="/admin/busca" method="POST" class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch">
+                <input class="form-control" type="text" name="busca" placeholder="Buscar por..." aria-label="Buscar por..." aria-describedby="btnNavbarSearch">
                 <button class="btn btn-primary" id="btnNavbarSearch" type="button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -42,12 +42,12 @@
                     <i class="fas fa-user fa-fw"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li><a class="dropdown-item" href="/admin/config">Configurações</a></li>
+                    <li><a class="dropdown-item" href="/admin/log">Exibir Log</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    <li><a class="dropdown-item" href="/logout">Sair</a></li>
                 </ul>
             </li>
         </ul>
@@ -58,18 +58,30 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <!-- EXEMPLO DE TÍTULO DO GRUPO DE LINKS NO MENU -->
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Menu</div>
                         <!-- EXEMPLO DE LINK NO MENU -->
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="/admin">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
+                        </a>
+                        <a class="nav-link" href="/admin/clientes">
+                            <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
+                            Clientes
+                        </a>
+                        <a class="nav-link" href="/admin/categorias">
+                            <div class="sb-nav-link-icon"><i class="bi bi-diagram-2-fill"></i></div>
+                            Categorias
+                        </a>
+                        <a class="nav-link" href="/admin/produtos">
+                            <div class="sb-nav-link-icon"><i class="bi bi-tags-fill"></i></div>
+                            Produtos
                         </a>
                         
                         <!-- EXEMPLO DE GRUPO DE LINKS SIMPLES 
                             OS ATRIBUTOS: data-bs-target E aria-controls DEVEM "CASAR" COM O ID DO ITEM QUE 
                             TIVER A CLASSE "collapse" MAIS ABAIXO 
                         -->
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Layouts
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -79,14 +91,14 @@
                                 <a class="nav-link" href="layout-static.html">Static Navigation</a>
                                 <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                             </nav>
-                        </div>
+                        </div> -->
 
                         <!-- EXEMPLO DE GRUPO DE LINKS ANINHADOS 
                             OS ATRIBUTOS: data-bs-target E aria-controls DEVEM "CASAR" COM O ID DO ITEM QUE 
                             TIVER A CLASSE "collapse" MAIS ABAIXO
                             - ISSO TAMBÉM DEVE SER FEITO PARA OS FILHOS DESTE ITEM
                         -->
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                        <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Pages
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -116,21 +128,21 @@
                                     </nav>
                                 </div>
                             </nav>
-                        </div>
+                        </div> -->
 
 
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    <div class="small">Logado como:</div>
+                    <?=$usuario['nome']??''?>
                 </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
+                    <h1 class="mt-4"><?=$tituloInterno??''?></h1>
+                    <!-- <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
+                    </ol> -->
