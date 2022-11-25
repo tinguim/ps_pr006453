@@ -34,4 +34,4 @@ define('MAIL_NAME', 'Bicho Novo Pet Shop');
 define('MAIL_USER', 'pr006453@cfjl.com.br');
 define('MAIL_PASS', '');
 define('MAIL_CONTACTNAME', 'Pedro Atendedor');
-define('MAIL_CONTACTMAIL', 'pr006453@cfjl.com.br');
+define('MAIL_CONTACTMAIL', 'darosapedromiguel@gmail.com');
