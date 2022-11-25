@@ -9,7 +9,6 @@ define('DISPLAY_ERRORS', 1);
 define('PATH_PROJETO', __DIR__ . '/../');
 define('SALT_SENHA', '123ABC');
 
-
 /**
  * DEFINIÇÕES DE PATH DE ARQUIVOS
  */
@@ -32,5 +31,7 @@ define('DB_PASSWORD',  '');
 define('MAIL_HOST', 'smtp.gmail.com');
 define('MAIL_PORT', 587);
 define('MAIL_NAME', 'Bicho Novo Pet Shop');
-define('MAIL_USER', '');
-define('MAIL_PASS', 587);
+define('MAIL_USER', 'pr006453@cfjl.com.br');
+define('MAIL_PASS', '');
+define('MAIL_CONTACTNAME', 'Pedro Atendedor');
+define('MAIL_CONTACTMAIL', 'pr006453@cfjl.com.br');
