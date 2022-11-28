@@ -117,6 +117,9 @@ class Cliente extends DAO
 
     public function setSenha(string $senha): self
     {
+        if ($this->senha && !$senha) {
+            return $this;
+        }
         if (strlen($senha)<5) {
             throw new Exception('O tamanho da senha é inválido! Digite ao menos cinco caracteres');
         }
