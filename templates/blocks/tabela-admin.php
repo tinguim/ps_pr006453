@@ -42,7 +42,7 @@
 
         $valorChave = $row[$campoChave];
         $linkEdicao = "{$rotaAtual}/{$valorChave}";
-        $htmlLinhas = <<<HTML
+        $htmlLinhas .= <<<HTML
             <td class="text-center">
                 <a href="{$linkEdicao}" class="text-danger" titlle="Editar registro">
                     <i class="bi bi-pencil-square"></i>
