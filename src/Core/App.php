@@ -44,7 +44,7 @@ class App
     private static function registraRotasDoBackEnd()
     {
         self::$router->mount('/admin', function() {
-            self::$router->get('/', '\PetShop\Controller\AdminDashboardController@index');
+            self::$router->get('/dashboard', '\PetShop\Controller\AdminDashboardController@index');
             self::$router->get('/clientes', '\PetShop\Controller\AdminClienteController@listar');
             self::$router->get('/clientes/{valor}', '\PetShop\Controller\AdminClienteController@form');
             self::$router->post('/clientes/{valor}', '\PetShop\Controller\AdminClienteController@postForm');
