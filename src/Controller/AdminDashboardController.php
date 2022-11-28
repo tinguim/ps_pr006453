@@ -1,10 +1,9 @@
 <?php
 namespace PetShop\Controller;
 
-use PetShop\Core\FrontController;
 use PetShop\View\Render;
 
-class AdminDashboardController extends FrontController
+class AdminDashboardController
 {
     public function index()
     {
