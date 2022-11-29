@@ -48,6 +48,10 @@ class App
             self::$router->get('/clientes', '\PetShop\Controller\AdminClienteController@listar');
             self::$router->get('/clientes/{valor}', '\PetShop\Controller\AdminClienteController@form');
             self::$router->post('/clientes/{valor}', '\PetShop\Controller\AdminClienteController@postForm');
+
+            self::$router->get('/usuarios', '\PetShop\Controller\AdminUsuarioController@listar');
+            self::$router->get('/usuarios/{valor}', '\PetShop\Controller\AdminUsuarioController@form');
+            self::$router->post('/usuarios/{valor}', '\PetShop\Controller\AdminUsuarioController@postForm');
         });
     }
 
