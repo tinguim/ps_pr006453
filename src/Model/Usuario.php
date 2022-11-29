@@ -25,7 +25,7 @@ class Usuario extends DAO
     #[Campo(label:'Tipo de Usuário', nn:true)]
     protected $tipo;
 
-    #[Campo(label:'Quantidade de acessos do Usuário', nn:true)]
+    #[Campo(label:'Quantidade de Acessos', nn:true)]
     protected $qtdAcessos;
 
     #[Campo(label:'Data de Criação', nn:true, auto:true)]
