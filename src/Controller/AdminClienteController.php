@@ -45,6 +45,7 @@ class AdminClienteController
         //cria e exibe o formulario
         $dados = [];
         $dados['titulo'] = 'Clientes - Manutenção';
+        $dados['usuario'] = $_SESSION['usuario'];
         $dados['formulario'] = $this->renderizaFormulario(empty($_POST));
 
         Render::back('clientes', $dados);
