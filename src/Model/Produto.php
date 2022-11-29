@@ -1,49 +1,54 @@
 <?php
 namespace PetShop\Model;
 
-//produtos
-class Produto 
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
+use PetShop\Core\DAO;
+use PetShop\Core\Exception;
+
+#[Entidade(name: 'produtos')]
+class Produto extends DAO
 {
-    //Código do Produto, pk, nn, auto
+    #[Campo(label:'Código do Produto', nn:true, pk:true, auto:true)]
     protected $idProduto;
 
-    //Código do Cliente, nn
-    protected $idcliente;
+    #[Campo(label:'Código do Cliente', nn:true, fk:true)]
+    protected $idMarca;
 
-    //Nome do Produto, nn
+    #[Campo(label:'Nome do Produto', nn:true, order:true)]
     protected $nome;
 
-    //Tipo do Produto, nn
+    #[Campo(label:'Tipo do Produto', nn:true)]
     protected $tipo;
 
-    //Preço do Produto, nn
+    #[Campo(label:'Preço do Produto', nn:true)]
     protected $preco;
 
-    //Quantidade do Produto, nn
+    #[Campo(label:'Quantidade do Produto', nn:true)]
     protected $quantidade;
 
-    //Largura do Produto
+    #[Campo(label:'Largura do Produto')]
     protected $largura;
 
-    //Altura do Produto
+    #[Campo(label:'Altura do Produto')]
     protected $altura;
 
-    //Profundidade do Produto
+    #[Campo(label:'Profundidade do Produto')]
     protected $profundidade;
 
-    //Peso do Produto
+    #[Campo(label:'Peso do Produto')]
     protected $peso;
 
-    //Descrição do Produto
+    #[Campo(label:'Descrição do Produto')]
     protected $descricao;
 
-    //Especificações do Produto
+    #[Campo(label:'Especificações do Produto')]
     protected $especificoes;
 
-    //Data de Criação, nn, auto
+    #[Campo(label:'Data de Criação', nn:true, auto:true)]
     protected $created_at;
 
-    //Data de Alteração, nn, auto
+    #[Campo(label:'Data de Alteração', nn:true, auto:true)]
     protected $updated_at;
 
     public function getIdProduto()
@@ -51,14 +56,19 @@ class Produto
         return $this->idProduto;
     }
 
-    public function getIdcliente()
+    public function getIdMarca()
     {
-        return $this->idcliente;
+        return $this->idmarca;
     }
 
-    public function setIdcliente($idcliente): self
+    public function setIdMarca($idMarca): self
     {
-        $this->idcliente = $idcliente;
+        $objMarca = new Marca;
+        if (!$objMarca->loadById($idMarca)) {
+            throw new Exception('A marca informada é inválida!');
+        }
+
+        $this->idMarca = $idMarca;
 
         return $this;
     }
@@ -70,6 +80,10 @@ class Produto
 
     public function setNome($nome): self
     {
+        $nome = trim($nome);
+        if (strlen($nome) < 3) {
+            throw new Exception("Nome do Produto inválida!");
+        }
         $this->nome = $nome;
 
         return $this;
@@ -82,6 +96,10 @@ class Produto
 
     public function setTipo($tipo): self
     {
+        $tiposPermitidos = ['Ração', 'Brinquedo', 'Medicamento', 'Higiene & Beleza'];
+        if (!in_array($tipo, $tiposPermitidos)) {
+            throw new Exception('Tipo inválido para o produto!');
+        }
         $this->tipo = $tipo;
 
         return $this;
@@ -94,6 +112,9 @@ class Produto
 
     public function setPreco($preco): self
     {
+        if (!is_numeric($preco) || $preco<0) {
+            throw new Exception('Valor inválido para o produto!');
+        }
         $this->preco = $preco;
 
         return $this;
@@ -106,6 +127,9 @@ class Produto
 
     public function setQuantidade($quantidade): self
     {
+        if (!is_numeric($quantidade) || $quantidade<0) {
+            throw new Exception('Quantidade inválido para o produto!');
+        }
         $this->quantidade = $quantidade;
 
         return $this;
@@ -119,6 +143,9 @@ class Produto
  
     public function setLargura($largura): self
     {
+        if (!is_numeric($largura) || $largura<0) {
+            throw new Exception('Largura inválida para o produto!');
+        }
         $this->largura = $largura;
 
         return $this;
@@ -131,6 +158,9 @@ class Produto
 
     public function setAltura($altura): self
     {
+        if (!is_numeric($altura) || $altura<0) {
+            throw new Exception('Altura inválida para o produto!');
+        }
         $this->altura = $altura;
 
         return $this;
@@ -143,6 +173,9 @@ class Produto
 
     public function setProfundidade($profundidade): self
     {
+        if (!is_numeric($profundidade) || $profundidade<0) {
+            throw new Exception('Profundidade inválida para o produto!');
+        }
         $this->profundidade = $profundidade;
 
         return $this;
@@ -155,6 +188,9 @@ class Produto
 
     public function setPeso($peso): self
     {
+        if (!is_numeric($peso) || $peso<0) {
+            throw new Exception('Peso inválido para o produto!');
+        }
         $this->peso = $peso;
 
         return $this;
@@ -167,6 +203,13 @@ class Produto
 
     public function setDescricao($descricao): self
     {
+        $descricao = trim($descricao);
+        if (!$descricao) {
+            return $this;
+        }
+        if (strlen($descricao) < 15) {
+            throw new Exception("Descrição do Produto inválida!");
+        }
         $this->descricao = $descricao;
 
         return $this;
@@ -179,17 +222,24 @@ class Produto
 
     public function setEspecificoes($especificoes): self
     {
+        $especificoes = trim($especificoes);
+        if (!$especificoes) {
+            return $this;
+        }
+        if (strlen($especificoes) < 15) {
+            throw new Exception("Especificação do Produto inválida!");
+        }
         $this->especificoes = $especificoes;
 
         return $this;
     }
 
-    public function getCreatedAt()
+    public function getCreated_At()
     {
         return $this->created_at;
     }
 
-    public function getUpdatedAt()
+    public function getUpdated_At()
     {
         return $this->updated_at;
     }
