@@ -44,10 +44,10 @@ class AdminProdutoController
             }
             $_POST = $resultado[0];
             $_POST['preco'] = number_format($_POST['preco'], 2, ',', '');
-            $_POST['largura'] = number_format($_POST['largura'], 2, ',', '');
-            $_POST['altura'] = number_format($_POST['altura'], 2, ',', '');
-            $_POST['profundidade'] = number_format($_POST['profundidade'], 2, ',', '');
-            $_POST['peso'] = number_format($_POST['peso'], 2, ',', '');
+            $_POST['largura'] = number_format($_POST['largura']??0, 2, ',', '');
+            $_POST['altura'] = number_format($_POST['altura']??0, 2, ',', '');
+            $_POST['profundidade'] = number_format($_POST['profundidade']??0, 2, ',', '');
+            $_POST['peso'] = number_format($_POST['peso']??0, 2, ',', '');
         }
 
         //cria e exibe o formulario
