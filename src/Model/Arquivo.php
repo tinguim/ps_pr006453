@@ -5,6 +5,7 @@ use Exception;
 use PetShop\Core\Attribute\Campo;
 use PetShop\Core\Attribute\Entidade;
 use PetShop\Core\DAO;
+use PetShop\Core\Exception;
 
 #[Entidade(name: 'arquivos')]
 class Arquivo extends DAO
@@ -24,7 +25,7 @@ class Arquivo extends DAO
     #[Campo(label:'Tabela do Arquivo')]
     protected $tabela;
 
-    #[Campo(label:'Código da Tabela do Arquivo')]
+    #[Campo(label:'Código da Tabela')]
     protected $tabelaId;
 
     #[Campo(label:'Data de Criação', nn:true, auto:true)]
@@ -69,6 +70,12 @@ class Arquivo extends DAO
 
     public function setDescricao($descricao): self
     {
+        $descricao = trim($descricao);
+        if ($descricao=='') {
+            $this->descricao = null;
+        } else if (strlen($descricao<5)) {
+            throw new Exception('Adescrição é inválida!');
+        }
         $this->descricao = $descricao;
 
         return $this;
