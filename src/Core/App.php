@@ -62,6 +62,22 @@ class App
             self::$router->get('/usuarios', '\PetShop\Controller\AdminUsuarioController@listar');
             self::$router->get('/usuarios/{valor}', '\PetShop\Controller\AdminUsuarioController@form');
             self::$router->post('/usuarios/{valor}', '\PetShop\Controller\AdminUsuarioController@postForm');
+
+            self::$router->get('/dicas', '\PetShop\Controller\AdminDicaController@listar');
+            self::$router->get('/dicas/{valor}', '\PetShop\Controller\AdminDicaController@form');
+            self::$router->post('/dicas/{valor}', '\PetShop\Controller\AdminDicaController@postForm');
+
+            self::$router->get('/marcas', '\PetShop\Controller\AdminMarcaController@listar');
+            self::$router->get('/marcas/{valor}', '\PetShop\Controller\AdminMarcaController@form');
+            self::$router->post('/marcas/{valor}', '\PetShop\Controller\AdminMarcaController@postForm');
+
+            self::$router->get('/categorias', '\PetShop\Controller\AdminCategoriaController@listar');
+            self::$router->get('/categorias/{valor}', '\PetShop\Controller\AdminCategoriaController@form');
+            self::$router->post('/categorias/{valor}', '\PetShop\Controller\AdminCategoriaController@postForm');
+
+            self::$router->get('/produtos', '\PetShop\Controller\AdminProdutoController@listar');
+            self::$router->get('/produtos/{valor}', '\PetShop\Controller\AdminProdutoController@form');
+            self::$router->post('/produtos/{valor}', '\PetShop\Controller\AdminProdutoController@postForm');
         });
     }
 
