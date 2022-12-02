@@ -43,7 +43,7 @@ class Produto extends DAO
     protected $descricao;
 
     #[Campo(label:'Especificações do Produto')]
-    protected $especificoes;
+    protected $especificacoes;
 
     #[Campo(label:'Data de Criação', nn:true, auto:true)]
     protected $created_at;
@@ -223,20 +223,20 @@ class Produto extends DAO
         return $this;
     }
 
-    public function getEspecificoes()
+    public function getEspecificacoes()
     {
-        return $this->especificoes;
+        return $this->especificacoes;
     }
 
-    public function setEspecificoes($especificoes): self
+    public function setEspecificacoes($especificacoes): self
     {
-        $especificoes = trim($especificoes);
-        if ($especificoes=='') {
-            $this->especificoes = null;
-        }else if (strlen($especificoes) < 15) {
+        $especificoes = trim($especificacoes);
+        if ($especificacoes=='') {
+            $this->especificacoes = null;
+        }else if (strlen($especificacoes) < 15) {
             throw new Exception("Especificação do Produto inválida!");
         }
-        $this->especificoes = $especificoes;
+        $this->especificacoes = $especificacoes;
 
         return $this;
     }
