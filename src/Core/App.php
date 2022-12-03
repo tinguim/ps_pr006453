@@ -80,7 +80,7 @@ class App
             self::$router->post('/produtos/{valor}', '\PetShop\Controller\AdminProdutoController@postForm');
 
             self::$router->get('/imagens/(\w+)/(\d+)', '\PetShop\Controller\AdminImagemController@listar');
-            self::$router->get('/iamgens/(\w+)/(\d+)/(\w+)', '\PetShop\Controller\AdminImagemController@form');
+            self::$router->get('/imagens/(\w+)/(\d+)/(\w+)', '\PetShop\Controller\AdminImagemController@form');
             self::$router->post('/imagens/(\w+)/(\d+)/(\w+)', '\PetShop\Controller\AdminImagemController@postForm');
         });
     }
