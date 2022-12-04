@@ -1,7 +1,9 @@
 <?php
 namespace PetShop\Controller;
 
+use PetShop\Core\DB;
 use PetShop\Core\Exception;
+use PetShop\Model\Categoria;
 use PetShop\Model\Marca;
 use PetShop\Model\Produto;
 use PetShop\View\Render;
@@ -10,17 +12,24 @@ class AdminProdutoController
 {
     public function listar()
     {
+        $sql = 'SELECT p.idproduto, p.nome, p.preco, m.marca idmarca, c.nome idcategoria, FORMAT(p.preco, 2, "pt_BR") preco
+                FROM produtos p
+                INNER JOIN marcas m on m.idmarca = p.idmarca
+                INNER JOIN categorias c on c.idcategoria = p.idcategoria
+                ORDER BY p.nome';
+        $rows = DB::select($sql);
+
         //Alimentando dados para a tabela de listagem
         $dadosListagem = [];
         $dadosListagem['objeto'] = new Produto;
+        $dadosListagem['rows'] = $rows;
         $dadosListagem['imagens'] = true;
         $dadosListagem['colunas'] = [
             ['campo'=>'idproduto', 'class'=>'text-center'],
             ['campo'=>'idmarca', 'class'=>'text-center'],
-            ['campo'=>'nome'],
-            ['campo'=>'tipo', 'class'=>'text-center'],
+            ['campo'=>'idcategoria', 'class'=>'text-center'],
+            ['campo'=>'nome', 'class'=>'w-50'],
             ['campo'=>'preco','class'=>'text-center'],
-            ['campo'=>'created_at', 'class'=>'text-center'],
         ];
         $htmlTabela = Render::block('tabela-admin', $dadosListagem);
 
@@ -106,14 +115,21 @@ class AdminProdutoController
             $marcaOptions[] = ['value'=>$m['idmarca'], 'label'=>$m['marca']];
         }
 
+        $categoriaOptions = [];
+        $dadosCategorias = (new Categoria)->find();
+        foreach($dadosCategorias as $c) {
+            $categoriaOptions[] = ['value'=>$c['idcategoria'], 'label'=>$c['nome']];
+        }
+
 
         $dados = [
             'btn_class' => 'btn btn-warning px-5 my-5',
             'btn_label' => ($novo ? 'Adicionar' : 'Atualizar'),
             'fields' => [
                 ['type'=>'readonly', 'name'=>'idproduto', 'class'=>'col-2', 'label'=>'Id. Produto'],
-                ['type'=>'text', 'name'=>'nome', 'class'=>'col-6', 'label'=>'Nome do Produto', 'required'=>true],
+                ['type'=>'text', 'name'=>'nome', 'class'=>'col-4', 'label'=>'Nome do Produto', 'required'=>true],
                 ['type'=>'select', 'name'=>'idmarca', 'class'=>'col-2', 'label'=>'Marca', 'required'=>true, 'options'=>$marcaOptions],
+                ['type'=>'select', 'name'=>'idcategoria', 'class'=>'col-2', 'label'=>'Categoria', 'required'=>true, 'options'=>$categoriaOptions],
                 ['type'=>'select', 'name'=>'tipo', 'class'=>'col-2', 'label'=>'Tipo', 'required'=>true, 'options'=>[
                     ['value'=>'Ração', 'label'=>'Ração'],
                     ['value'=>'Brinquedo', 'label'=>'Brinquedo'],
