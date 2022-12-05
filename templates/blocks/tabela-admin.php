@@ -51,6 +51,17 @@ foreach ($rows as $row) {
                 </a>
         HTML;
 
+    $btnExcluir = '';
+    if (!empty($remover)) {
+        $model = pathinfo($objeto::class, PATHINFO_BASENAME);
+        $rotaExclusao = "/admin/remover/{$model}/{$valorChave}";
+        $btnExcluir = <<<HTML
+                <a href="{$rotaExclusao}" class="link-excluir text-warning text-decoration-none px-1"  titlle="Remover registro">
+                    <i class="bi bi-trash3-fill"></i>
+                </a>
+        HTML;
+    }
+
     $btnImagem = '';
     if (!empty($imagens)) {
         $model = pathinfo($objeto::class, PATHINFO_BASENAME);
@@ -66,6 +77,7 @@ foreach ($rows as $row) {
         <td class="text-center">
             {$btnEditar}
             {$btnImagem}
+            {$btnExcluir}
         </td>
     <tr>
     HTML;
