@@ -5,7 +5,7 @@ use Exception;
 use PetShop\Core\Attribute\Campo;
 use PetShop\Core\Attribute\Entidade;
 use PetShop\Core\DAO;
-use Respect\Validation\Validador as v;
+use Respect\Validation\Validator as v;
 
 #[Entidade(name: 'empresas')]
 class Empresa extends DAO
@@ -13,7 +13,7 @@ class Empresa extends DAO
     #[Campo(label:'Código da Empresa', nn:true, pk:true, auto:true)]
     protected $idEmpresa;
 
-    #[Campo(label:'Nome Fantasia', nn:true)]
+    #[Campo(label:'Nome Fantasia', nn:true, order:true)]
     protected $nomeFantasia;
 
     #[Campo(label:'Razão Social', nn:true)]
@@ -286,12 +286,12 @@ class Empresa extends DAO
         return $this;
     }
 
-    public function getCreatedAt()
+    public function getCreated_At()
     {
         return $this->created_at;
     }
 
-    public function getUpdatedAt()
+    public function getUpdated_At()
     {
         return $this->updated_at;
     }
