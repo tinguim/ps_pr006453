@@ -17,7 +17,7 @@ class AdminImagemController
 
         $objetoComFiguras = new $modelPath;
         $objetoComFiguras->loadById($idmodel);
-
+        
         //Alimentando dados para a tabela de listagem
         $dadosListagem = [];
         $dadosListagem['objeto'] = new Arquivo;

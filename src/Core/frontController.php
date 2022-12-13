@@ -1,6 +1,7 @@
 <?php
 namespace PetShop\Core;
 
+use PetShop\Model\Categoria;
 use PetShop\Model\Empresa;
 use PetShop\View\Render;
 
@@ -19,6 +20,8 @@ abstract class FrontController
         if ( !empty($_SESSION['cliente'])) {
             $dados[0]['cliente'] = $_SESSION['cliente'];
         }
+
+        $dados[0]['categorias'] = (new Categoria)->find();
 
         return Render::block('topo', $dados[0]);
     }

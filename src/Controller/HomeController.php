@@ -2,20 +2,25 @@
 namespace PetShop\Controller;
 
 use PetShop\Core\FrontController;
-use PetShop\Model\Estado;
+use PetShop\Model\Categoria;
 use PetShop\View\Render;
 
 class HomeController extends FrontController
 {
     public function index()
     {
-        $estados = ( new Estado() )->find();
-
         $dados = [];
-        $dados['titulo'] = 'Lista de Estados';
-        $dados['estados'] = $estados;
+        $dados['titulo'] = 'Página Inicial';
         $dados['topo'] = $this->carregaHTMLTopo();
         $dados['rodape'] = $this->carregaHTMLRodape();
+
+        $categorias = (new Categoria)->find();
+        foreach ($categorias as &$c) {
+            $categoriaAtual = new Categoria;
+            $categoriaAtual->loadById($c['idcategoria']);
+            $c['imagens'] = $categoriaAtual->getFiles();
+        }
+        $dados['categorias'] = $categorias;
 
         Render::front('home', $dados);
     }
