@@ -12,7 +12,7 @@ if (empty($cliente)) {
         <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Olá <strong>{$cliente['prinome']}</strong>
         </a>
-        <ul class="dropdown-menu dropdown-menu-dark border-light">
+        <ul class="dropdown-menu border-light">
         <li><a class="dropdown-item" href="/meus-dados">Minha área</a></li>
         <li><a class="dropdown-item" href="/meus-pedidos">Meus pedidos</a></li>
         <li><hr class="dropdown-divider border-light"></li>
@@ -29,7 +29,7 @@ if (empty($cliente)) {
         <div class="topo-site-superior row pt-3 pb-1">
             <div class="col-2 topo-site-logo d-flex align-items-center">
                 <a href="/" title="Voltar ao Ínicio do site">
-                    <img src="https://picsum.photos/180/50" width="180" height="50" alt="logo" class="img-fluid rounded-1">
+                    <img src="/assets/img/logo_site.png" width="180" height="50" alt="logo" class="img-fluid rounded-1">
                 </a>
             </div>
             <div class="col-6 topo-site-busca">
@@ -88,8 +88,16 @@ if (empty($cliente)) {
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p>Lista de categorias ex1</p>
-        <p>Lista de categorias ex2</p>
-        <p>Lista de categorias ex3</p>
+        <div class="list-group list-group-flush">
+            <?php
+                foreach($categorias??[] as $c) {
+                    echo <<<HTML
+                        <a href="/categorias/{$c['idcategoria']}" class="list-group-item list-group-item-action">
+                            {$c['nome']}
+                        </a>
+                    HTML;
+                }
+            ?>
+        </div>
     </div>
 </div>
