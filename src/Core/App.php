@@ -73,6 +73,10 @@ class App
             self::$router->get('/marcas/{valor}', '\PetShop\Controller\AdminMarcaController@form');
             self::$router->post('/marcas/{valor}', '\PetShop\Controller\AdminMarcaController@postForm');
 
+            self::$router->get('/empresas', '\PetShop\Controller\AdminEmpresaController@listar');
+            self::$router->get('/empresas/{valor}', '\PetShop\Controller\AdminEmpresaController@form');
+            self::$router->post('/empresas/{valor}', '\PetShop\Controller\AdminEmpresaController@postForm');
+
             self::$router->get('/categorias', '\PetShop\Controller\AdminCategoriaController@listar');
             self::$router->get('/categorias/{valor}', '\PetShop\Controller\AdminCategoriaController@form');
             self::$router->post('/categorias/{valor}', '\PetShop\Controller\AdminCategoriaController@postForm');
@@ -117,6 +121,8 @@ class App
         self::$router->get('/meus-dados', '\PetShop\Controller\MeusDadosController@meusDados');
         self::$router->get('/fale-conosco', '\PetShop\Controller\FaleConoscoController@faleConosco');
         self::$router->post('/fale-conosco', '\PetShop\Controller\FaleConoscoController@postFaleConosco');
+        self::$router->get('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');
+        self::$router->post('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');
     }
 
     /**
