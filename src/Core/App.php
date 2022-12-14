@@ -113,6 +113,7 @@ class App
     private static function registraRotasDoFrontEnd()
     {
         self::$router->get('/', '\PetShop\Controller\HomeController@index');
+        self::$router->post('/ajax', '\PetShop\Controller\AjaxController@loader');
         self::$router->get('/login', '\PetShop\Controller\LoginController@login');
         self::$router->get('/logout', '\PetShop\Controller\LoginController@logout');
         self::$router->post('/login', '\PetShop\Controller\LoginController@postLogin');
@@ -123,6 +124,8 @@ class App
         self::$router->post('/fale-conosco', '\PetShop\Controller\FaleConoscoController@postFaleConosco');
         self::$router->get('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');
         self::$router->post('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');
+        self::$router->get('/categorias/{id}', '\PetShop\Controller\CategoriaController@listarProdutos');
+        self::$router->get('/produtos/{id}', '\PetShop\Controller\ProdutoController@mostrarProduto');
     }
 
     /**
