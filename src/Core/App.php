@@ -126,7 +126,7 @@ class App
         self::$router->get('/meus-dados', '\PetShop\Controller\MeusDadosController@meusDados');
         self::$router->get('/fale-conosco', '\PetShop\Controller\FaleConoscoController@faleConosco');
         self::$router->post('/fale-conosco', '\PetShop\Controller\FaleConoscoController@postFaleConosco');
-        self::$router->get('/promocoes', '\PetShop\Controller\PromocoesController@promocoes');
+        self::$router->get('/promocoes',  '\PetShop\Controller\PromocoesController@listarPromocoes');
         self::$router->post('/promocoes', '\PetShop\Controller\PromocoesController@postPromocoes');
         self::$router->get('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');
         self::$router->post('/nossas-lojas', '\PetShop\Controller\NossasLojasController@nossasLojas');

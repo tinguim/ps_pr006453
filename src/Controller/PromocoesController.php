@@ -8,7 +8,7 @@ use PetShop\View\Render;
 
 class PromocoesController extends FrontController
 {
-    public function listarPromocoes($idPromocao)
+    public function listarPromocoes()
     {
 
         $dados = [];
@@ -16,13 +16,9 @@ class PromocoesController extends FrontController
         $dados['rodape'] = $this->carregaHTMLRodape();
 
         $promocoes = new Promocoes;
-        if (!$promocoes->loadById($idPromocao)) {
-            redireciona('/', 'warning', 'Promoção não localizada');
-        }
-        
-        $promocoesLocalizadas = $promocoes->find(['idpromocao='=>$idPromocao]);
-        $dados['promocoes'] = $promocoesLocalizadas[0];
-        $dados['promocoes']['imagens'] = $promocoes->getFiles();
+
+        $promocoesLocalizadas = $promocoes->find();
+        $dados['promocoes'] = $promocoesLocalizadas;
 
         Render::front('promocoes', $dados);
     }

@@ -171,3 +171,4 @@ Stack trace:
 [17-Feb-2023 11:17:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
 [17-Feb-2023 11:32:55 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
 [17-Feb-2023 11:32:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 11:45:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 19
