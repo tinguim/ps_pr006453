@@ -115,3 +115,44 @@ Stack trace:
 [17-Feb-2023 10:52:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
 [17-Feb-2023 10:52:53 America/Sao_Paulo] PHP Warning:  Undefined variable $promocao in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
 [17-Feb-2023 10:52:53 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:56:56 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:56:56 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:57:13 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:57:13 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:58:03 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:58:03 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:58:12 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 10:58:12 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[17-Feb-2023 11:00:43 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 7
+[17-Feb-2023 11:00:43 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 7
+[17-Feb-2023 11:06:44 America/Sao_Paulo] PHP Warning:  Undefined array key "idempresa" in C:\xampp\htdocs\projeto01\src\Controller\PromocoesController.php on line 25
+[17-Feb-2023 11:06:45 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: PetShop\Core\DAO::loadById(): Argument #1 ($id) must be of type string|int, null given, called in C:\xampp\htdocs\projeto01\src\Controller\PromocoesController.php on line 25 and defined in C:\xampp\htdocs\projeto01\src\Core\DAO.php:171
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\PromocoesController.php(25): PetShop\Core\DAO->loadById(NULL)
+#1 [internal function]: PetShop\Controller\PromocoesController->promocoes()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 171
+[17-Feb-2023 11:07:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function promocoes() in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php:10
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(35): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\PromocoesController.php(30): PetShop\View\Render::front('promocoes', Array)
+#2 [internal function]: PetShop\Controller\PromocoesController->promocoes()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:09:04 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:09:32 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:10:43 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:11:10 America/Sao_Paulo] PHP Warning:  Undefined variable $promoAtual in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:11:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:11:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
+[17-Feb-2023 11:11:28 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 10
