@@ -8,7 +8,7 @@ use PetShop\Core\SendMail;
 use PetShop\View\Render;
 use Respect\Validation\Validator as v;
 
-class FaleConoscoController extends FrontController
+class PromocoesController extends FrontController
 {
     public function promocoes()
     {
@@ -16,7 +16,7 @@ class FaleConoscoController extends FrontController
         $dados = [];
         $dados['topo'] = $this->carregaHTMLTopo();
         $dados['rodape'] = $this->carregaHTMLRodape();
-        $dados['formulario'] = $this->formFaleConosco();
+        $dados['formulario'] = $this->formPromocoes();
 
         Render::front('promocoes', $dados);
     }
@@ -24,52 +24,45 @@ class FaleConoscoController extends FrontController
     public function postPromocoes()
     {
         try {
-            if (empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['mensagem'])) {
+            if (empty($_POST['titulo']) || empty($_POST['descricao']) || empty($_POST['mensagem'])) {
                 throw new Exception('Todos os campos devem ser preenchidos');
             }
-            $nome = trim($_POST['nome']);
-            $email = trim($_POST['email']);
-            $mensagem = trim($_POST['mensagem']);
-            if (strlen($nome)<6) {
+            $titulo = trim($_POST['titulo']);
+            $descricao = trim($_POST['descricao']);
+            if (strlen($titulo)<6) {
                 throw new Exception('O nome precisa ser completo');
             }
-            $emailValido = v::email()->validate($email);
-            if (!$emailValido) {
-                throw new Exception('O e-mail está incorreto');
-            }
-            if (strlen($mensagem)<6) {
+            if (strlen($descricao)<6) {
                 throw new Exception('Por favor, seja mais descritivo na mensagem');
             }
             $assunto = 'Contato via site - ' . date('d/m/Y H:i:s');
             $mensagemFull = <<<HTML
-                Olá, chegou um novo contato<br>
-                <strong>Nome:</strong> {$nome}<br>
-                <strong>E-mail:</strong> {$email}<br>
-                <strong>Mensagem:</strong> <br>{$mensagem}<br>
+                Olá, chegou uma nova promoção<br>
+                <strong>Título:</strong> {$titulo}<br>
+                <strong>Descrição:</strong> <br>{$descricao}<br>
             HTML;
 
-            SendMail::enviar(MAIL_CONTACTNAME, MAIL_CONTACTMAIL, $assunto, $mensagemFull, $nome, $email);
+            SendMail::enviar(MAIL_CONTACTNAME, MAIL_CONTACTMAIL, $assunto, $mensagemFull, $titulo);
 
         } catch(Exception $e) {
             $_SESSION['mensagem'] = [
                 'tipo'=>'warning',
                 'texto'=>$e->getMessage()
             ];
-            $this->faleConosco();
+            $this->promocoes();
             exit;
         }
-        redireciona('/fale-conosco', 'success', 'Mensagem enviada com sucesso');
+        redireciona('/promocoes', 'success', 'Mensagem enviada com sucesso');
     }
 
-    private function formFaleConosco()
+    private function formPromocoes()
     {
         $dados = [
             'btn_label' => 'Enviar mensagem',
             'btn_class' => 'btn btn-warning w-50',
             'fields' => [
-                ['type' => 'text', 'name' => 'nome', 'label' => 'Nome completo', 'required' => true],
-                ['type' => 'email', 'name' => 'email', 'label' => 'E-mail', 'required' => true],
-                ['type' => 'textarea', 'name' => 'mensagem', 'label' => 'Mensagem', 'rows' => 5, 'required' => true],
+                ['type' => 'text', 'name' => 'titulo', 'label' => 'Título', 'required' => true],
+                ['type' => 'textarea', 'name' => 'descricao', 'label' => 'Descrição', 'rows' => 5, 'required' => true],
             ]
         ];
 

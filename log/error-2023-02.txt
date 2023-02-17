@@ -77,3 +77,41 @@ Stack trace:
 [17-Feb-2023 10:23:44 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
 [17-Feb-2023 10:24:02 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
 [17-Feb-2023 10:24:02 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:27:37 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:31:29 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:31:29 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 5
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 5
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 11
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 11
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 19
+[17-Feb-2023 10:38:35 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 19
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 5
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 5
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 8
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 11
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 11
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 19
+[17-Feb-2023 10:40:55 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 19
+[17-Feb-2023 10:46:05 America/Sao_Paulo] PHP Warning:  Undefined variable $formPromocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:47:32 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:48:26 America/Sao_Paulo] PHP Warning:  Undefined variable $Promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:48:36 America/Sao_Paulo] PHP Warning:  Undefined variable $Promocao in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:48:45 America/Sao_Paulo] PHP Warning:  Undefined variable $promocao in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:49:00 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:52:28 America/Sao_Paulo] PHP Warning:  Undefined variable $promocoes in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:52:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:52:53 America/Sao_Paulo] PHP Warning:  Undefined variable $promocao in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
+[17-Feb-2023 10:52:53 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\promocoes.php on line 6
