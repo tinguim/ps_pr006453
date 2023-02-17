@@ -8,21 +8,21 @@ use PetShop\View\Render;
 
 class PromocoesController extends FrontController
 {
-    public function promocoes()
+    public function listarPromocoes($idPromocao)
     {
 
         $dados = [];
         $dados['topo'] = $this->carregaHTMLTopo();
         $dados['rodape'] = $this->carregaHTMLRodape();
-        //$dados['empresa'] = $_SESSION['empresa'];
 
-        $promocoes = (new Promocoes)->find();
-        foreach ($promocoes as &$e) {
-            $promoAtual = new Promocoes;
-            $promoAtual->loadById($e['idpromocao']);
-            //$e['imagens'] = $promoAtual->getFiles();
+        $promocoes = new Promocoes;
+        if (!$promocoes->loadById($idPromocao)) {
+            redireciona('/', 'warning', 'Promoção não localizada');
         }
-        $dados['promocoes'] = $promocoes;
+        
+        $promocoesLocalizadas = $promocoes->find(['idpromocao='=>$idPromocao]);
+        $dados['promocoes'] = $promocoesLocalizadas[0];
+        $dados['promocoes']['imagens'] = $promocoes->getFiles();
 
         Render::front('promocoes', $dados);
     }
