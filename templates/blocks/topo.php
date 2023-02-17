@@ -72,6 +72,12 @@ if (empty($cliente)) {
                         <span>Fale conosco</span>
                     </a>
                 </div>
+                <div class="col-auto d-flex align-items-center">
+                    <a href="/promocoes" title="Promoções">
+                        <i class="bi bi-bullseye pe-1"></i>
+                        <span>Promoções</span>
+                    </a>
+                </div>
             </div>
             <div class="site-inferior-fone col-4 d-flex align-items-center justify-content-end">
                 <i class="bi bi-telephone pe-2"></i>

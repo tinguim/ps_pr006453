@@ -29,14 +29,14 @@ class CategoriaController extends FrontController
         $dados['categoria']['imagens'] = $categoria->getFiles();
 
         //carregando os produtos relacionados desta categoria
-        $produtos = (new Produto)->find(['idacategoria='=>$categoria->getIdCategoria()]);
+        $produtos = (new Produto)->find(['idcategoria='=>$categoria->getIdCategoria()]);
 
         //para cada produto, procuro as imagens relacionadas e crio uma coluna files com isso
         foreach($produtos as &$p) {
             //não é muito performatico fazer isso, mas neste moneto é o mais rápido
             $produtoAtual = new Produto;
             $produtoAtual->loadById($p['idproduto']);
-            $p['iamgens'] = $produtoAtual->getFiles();
+            $p['imagens'] = $produtoAtual->getFiles();
         }
 
         $dados['produtos'] = $produtos;

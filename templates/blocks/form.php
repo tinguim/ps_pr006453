@@ -25,6 +25,7 @@ $btn_class = $btn_class ?? 'btn btn-primary';
             case 'text':
             case 'email':
             case 'password':
+            case 'date':
                 echo <<<HTML
                         <div class="{$f['class']}">
                             <label for="{$f['name']}" class="form-label">{$f['label']}{$f['txt_required']}</label>

@@ -92,6 +92,10 @@
                             <div class="sb-nav-link-icon"><i class="bi bi-tags-fill"></i></div>
                             Produtos
                         </a>
+                        <a class="nav-link" href="/admin/promocoes">
+                            <div class="sb-nav-link-icon"><i class="bi bi-bullseye"></i></div>
+                            Promoções
+                        </a>
                         
                         <!-- EXEMPLO DE GRUPO DE LINKS SIMPLES 
                             OS ATRIBUTOS: data-bs-target E aria-controls DEVEM "CASAR" COM O ID DO ITEM QUE 
