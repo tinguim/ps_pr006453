@@ -1,0 +1,75 @@
+[06-Feb-2023 18:43:36 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idacategoria' in 'where clause', na LINHA: 63, comando: \nSELECT * FROM produtos WHERE idacategoria= ?  ORDER BY nome\nParâmetros:\narray (
+  'idacategoria=' => 1,
+)
+[06-Feb-2023 18:43:36 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:81
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(49): PetShop\Core\DB::query('SELECT * FROM p...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Core\DAO.php(162): PetShop\Core\DB::select('SELECT * FROM p...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Controller\CategoriaController.php(32): PetShop\Core\DAO->find(Array)
+#3 [internal function]: Petshop\Controller\CategoriaController->listarProdutos('1')
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#7 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#8 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#9 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 81
+[06-Feb-2023 19:22:12 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idacategoria' in 'where clause', na LINHA: 63, comando: \nSELECT * FROM produtos WHERE idacategoria= ?  ORDER BY nome\nParâmetros:\narray (
+  'idacategoria=' => 1,
+)
+[06-Feb-2023 19:22:12 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: Falha ao executar comando no banco de dados! in C:\xampp\htdocs\projeto01\src\Core\DB.php:81
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(49): PetShop\Core\DB::query('SELECT * FROM p...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Core\DAO.php(162): PetShop\Core\DB::select('SELECT * FROM p...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Controller\CategoriaController.php(32): PetShop\Core\DAO->find(Array)
+#3 [internal function]: Petshop\Controller\CategoriaController->listarProdutos('1')
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#7 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#8 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#9 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 81
+[06-Feb-2023 19:31:51 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 46
+[06-Feb-2023 19:32:44 America/Sao_Paulo] PHP Warning:  Undefined array key "precodesconto" in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 5
+[07-Feb-2023 13:45:26 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Feb-2023 13:45:26 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Feb-2023 13:54:20 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[07-Feb-2023 13:54:20 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[07-Feb-2023 14:03:51 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[07-Feb-2023 14:03:51 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[16-Feb-2023 13:45:04 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[16-Feb-2023 13:45:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 06:53:44 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 06:53:44 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:00:27 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:00:27 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:00:51 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:00:51 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:03:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "PetShop\Model\Promocao" not found in C:\xampp\htdocs\projeto01\src\Controller\AdminPromocoesController.php:14
+Stack trace:
+#0 [internal function]: PetShop\Controller\AdminPromocoesController->listar()
+#1 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#4 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#5 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#6 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Controller\AdminPromocoesController.php on line 14
+[17-Feb-2023 10:13:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Promocoes', '4')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[17-Feb-2023 10:16:45 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:16:45 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:17:10 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:17:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:20:18 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[17-Feb-2023 10:20:18 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85

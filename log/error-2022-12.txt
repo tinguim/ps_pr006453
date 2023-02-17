@@ -1,0 +1,403 @@
+[02-Dec-2022 19:07:43 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'especificoes' in 'field list', na LINHA: 63, comando: \nINSERT INTO produtos (idmarca, nome, tipo, preco, quantidade, largura, altura, profundidade, peso, descricao, especificoes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nParâmetros:\narray (
+  'idmarca' => '1',
+  'nome' => 'Pedro Miguel da Rosa',
+  'tipo' => 'Ração',
+  'preco' => '15.50',
+  'quantidade' => '12',
+  'largura' => '',
+  'altura' => '',
+  'profundidade' => '',
+  'peso' => '',
+  'descricao' => 'Ração para aliemntos de pequeno porte',
+  'especificoes' => NULL,
+)
+[02-Dec-2022 19:48:23 America/Sao_Paulo] PHP Warning:  Undefined variable $btnEditar in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 49
+[02-Dec-2022 20:02:55 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected variable "$parametros" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 272
+[02-Dec-2022 20:44:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Categoria::getOrderByField() in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php:37
+Stack trace:
+#0 [internal function]: PetShop\Controller\AdminImagemController->listar('Categoria', '1')
+#1 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#4 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#5 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#6 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php on line 37
+[02-Dec-2022 21:55:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "PetShop\Controller\ImageResize" not found in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php:126
+Stack trace:
+#0 [internal function]: PetShop\Controller\AdminImagemController->postForm('Categoria', '1', 'add')
+#1 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#4 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#5 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#6 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php on line 126
+[05-Dec-2022 16:59:28 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 16:59:31 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:28 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:36 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:36 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:36 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:36 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:42 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:42 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:42 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:42 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:44 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:44 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:44 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:44 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:45 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:45 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:45 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:45 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:46 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:46 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:46 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:46 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:48 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:48 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:48 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:48 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:49 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:49 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:49 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:49 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:50 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:50 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:50 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:50 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:51 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:51 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:51 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:51 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:52 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:52 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:52 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 17:31:52 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:11:59 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:11:59 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:11:59 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:11:59 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:07 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:07 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:07 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:07 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:10 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:10 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:10 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:17:10 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:25:02 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:25:02 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:25:02 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[05-Dec-2022 19:25:02 America/Sao_Paulo] PHP Warning:  Undefined variable $rotaExclusão in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 59
+[06-Dec-2022 20:18:57 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 20:18:58 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 20:25:19 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 20:25:19 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 20:34:28 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:07:45 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:07:49 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:07:54 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:34:18 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:50:05 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 24
+[06-Dec-2022 21:51:38 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:51:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:51:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:52:05 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:52:05 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:52:05 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:56:16 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:56:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:56:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:57:19 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:57:19 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[06-Dec-2022 21:57:19 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Dec-2022 15:55:11 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Dec-2022 21:45:54 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Dec-2022 21:45:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[07-Dec-2022 21:45:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[08-Dec-2022 15:50:15 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[08-Dec-2022 15:50:15 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[08-Dec-2022 15:50:15 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 10:42:42 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 10:42:42 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 10:42:42 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 11:12:04 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 11:12:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 11:12:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 19:26:11 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 19:26:11 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[09-Dec-2022 19:26:12 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:12:51 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:12:51 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:12:51 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:22:54 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:22:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:22:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 19:30:35 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/backend/pages/empresas.php
+[12-Dec-2022 19:30:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'empresas' não foi localizada! in C:\xampp\htdocs\projeto01\src\View\Render.php:83
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(31): PetShop\View\Render::back('empresas', Array)
+#1 [internal function]: PetShop\Controller\AdminEmpresaController->listar()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 83
+[12-Dec-2022 19:32:36 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/backend/pages/empresas.php
+[12-Dec-2022 19:32:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'empresas' não foi localizada! in C:\xampp\htdocs\projeto01\src\View\Render.php:83
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(31): PetShop\View\Render::back('empresas', Array)
+#1 [internal function]: PetShop\Controller\AdminEmpresaController->listar()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 83
+[12-Dec-2022 19:32:39 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/backend/pages/empresas.php
+[12-Dec-2022 19:32:39 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'empresas' não foi localizada! in C:\xampp\htdocs\projeto01\src\View\Render.php:83
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(31): PetShop\View\Render::back('empresas', Array)
+#1 [internal function]: PetShop\Controller\AdminEmpresaController->listar()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 83
+[12-Dec-2022 19:34:18 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 19:39:15 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 19:41:02 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 19:41:57 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 19:44:21 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:01:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('F')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'F')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:02:42 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('F')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'F')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:03:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('M')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'M')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:03:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('M')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'M')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:05:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('M')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'M')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:09:31 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O tipo deve ser Matriz ou Filial apenas! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:112
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTipo('M')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('tipo', 'M')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 112
+[12-Dec-2022 20:11:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: O campo Telefone 1 está inválido! in C:\xampp\htdocs\projeto01\src\Model\Empresa.php:215
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Empresa->setTelefone1('')
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminEmpresaController.php(69): PetShop\Core\DAO->__set('telefone1', '')
+#2 [internal function]: PetShop\Controller\AdminEmpresaController->postForm('add')
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Empresa.php on line 215
+[12-Dec-2022 20:28:37 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:28:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:28:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:28:59 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:33:41 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:34:19 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:34:19 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:34:19 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:34:28 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:34:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:34:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:41:54 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:41:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:41:54 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:13 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:13 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:13 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:17 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:17 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:46:17 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\Home.php on line 85
+[12-Dec-2022 20:50:46 America/Sao_Paulo] PHP Warning:  Undefined array key "empresa" in C:\xampp\htdocs\projeto01\src\Controller\NossasLojasController.php on line 16
+[12-Dec-2022 20:50:46 America/Sao_Paulo] PHP Warning:  Undefined variable $formulario in C:\xampp\htdocs\projeto01\templates\frontend\pages\nossas-lojas.php on line 6
+[12-Dec-2022 20:51:07 America/Sao_Paulo] PHP Warning:  Undefined array key "empresa" in C:\xampp\htdocs\projeto01\src\Controller\NossasLojasController.php on line 16
+[12-Dec-2022 20:55:58 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:56:04 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:56:25 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '1')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 20:58:41 America/Sao_Paulo] PHP Fatal error:  Uncaught PetShop\Core\Exception: O atributo  não tem método 'get'associado in C:\xampp\htdocs\projeto01\src\Core\DAO.php:30
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php(40): PetShop\Core\DAO->__get('')
+#1 [internal function]: PetShop\Controller\AdminImagemController->listar('Empresa', '2')
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 30
+[12-Dec-2022 21:03:59 America/Sao_Paulo] PHP Warning:  Undefined array key "empresa" in C:\xampp\htdocs\projeto01\src\Controller\NossasLojasController.php on line 17
+[12-Dec-2022 21:04:57 America/Sao_Paulo] PHP Warning:  Undefined array key "empresa" in C:\xampp\htdocs\projeto01\src\Controller\NossasLojasController.php on line 17
+[12-Dec-2022 21:19:27 America/Sao_Paulo] PHP Warning:  Undefined array key "empresa" in C:\xampp\htdocs\projeto01\src\Controller\NossasLojasController.php on line 17

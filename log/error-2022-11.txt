@@ -90,3 +90,257 @@ Stack trace:
 #1 C:\xampp\htdocs\projeto01\public\index.php(10): PetShop\Core\DAO->save()
 #2 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 87
+[22-Nov-2022 19:17:11 America/Sao_Paulo] PHP Warning:  Undefined array key "POST" in C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
+[22-Nov-2022 19:26:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:72
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('45435345')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(26): PetShop\Core\DAO->__set('cpfcnpj', '45435345')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(33): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 72
+[22-Nov-2022 19:57:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:72
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('45435345')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '45435345')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 72
+[22-Nov-2022 19:57:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:72
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('45435345')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '45435345')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 72
+[22-Nov-2022 19:58:05 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:72
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('45435345')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '45435345')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 72
+[22-Nov-2022 19:58:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:72
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('45435345')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '45435345')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 72
+[22-Nov-2022 19:58:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:70
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('782.932')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '782.932')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 70
+[22-Nov-2022 20:03:19 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Respect\Validation\Validador" not found in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:70
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(45): PetShop\Model\Cliente->setCpfCnpj('782.932')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(28): PetShop\Core\DAO->__set('cpfcnpj', '782.932')
+#2 [internal function]: PetShop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 70
+[22-Nov-2022 20:24:52 America/Sao_Paulo] PHP Warning:  Undefined array key "iddica" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 185
+[22-Nov-2022 20:24:56 America/Sao_Paulo] PHP Warning:  Undefined array key "iddica" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 185
+[22-Nov-2022 20:25:22 America/Sao_Paulo] PHP Warning:  Undefined array key "iddica" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 185
+[22-Nov-2022 20:31:07 America/Sao_Paulo] PHP Warning:  Undefined array key "iddica" in C:\xampp\htdocs\projeto01\src\Core\DAO.php on line 185
+[24-Nov-2022 13:21:36 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[24-Nov-2022 20:06:08 America/Sao_Paulo] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\projeto01\src\Core\frontController.php on line 19
+[24-Nov-2022 21:48:53 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[24-Nov-2022 21:48:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Petshop\Core\Exception" not found in C:\xampp\htdocs\projeto01\src\Core\sendMail.php:55
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\FaleConoscoController.php(51): PetShop\Core\SendMail::enviar('Pedro Atendedor', 'pr006453@cfjl.c...', 'Contato via sit...', '    Ol\xC3\xA1, chego...')
+#1 [internal function]: PetShop\Controller\FaleConoscoController->postFaleConosco()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\sendMail.php on line 55
+[24-Nov-2022 21:52:43 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[24-Nov-2022 21:52:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Petshop\Core\Exception" not found in C:\xampp\htdocs\projeto01\src\Core\sendMail.php:55
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\FaleConoscoController.php(51): PetShop\Core\SendMail::enviar('Pedro Atendedor', 'pr006453@cfjl.c...', 'Contato via sit...', '    Ol\xC3\xA1, chego...')
+#1 [internal function]: PetShop\Controller\FaleConoscoController->postFaleConosco()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\sendMail.php on line 55
+[24-Nov-2022 21:53:54 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[24-Nov-2022 21:53:54 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[24-Nov-2022 21:54:05 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[24-Nov-2022 21:54:05 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[24-Nov-2022 21:54:50 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[24-Nov-2022 21:54:50 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[25-Nov-2022 21:18:40 America/Sao_Paulo] PHP Warning:  Undefined variable $objeto in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:18:40 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function getFieleds() on null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin')
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:25:46 America/Sao_Paulo] PHP Warning:  Undefined variable $objeto in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 2
+[25-Nov-2022 21:25:46 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function getFieleds() on null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:2
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin')
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 2
+[25-Nov-2022 21:29:10 America/Sao_Paulo] PHP Warning:  Undefined variable $objeto in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:29:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function getFieleds() on null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin')
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:30:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Cliente::getFieleds() in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin', Array)
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:31:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Cliente::getFieleds() in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin', Array)
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:31:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Cliente::getFieleds() in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin', Array)
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:32:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Cliente::getFieleds() in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin', Array)
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:32:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method PetShop\Model\Cliente::getFieleds() in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php:3
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\View\Render.php(63): require_once()
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminClienteController.php(21): PetShop\View\Render::block('tabela-admin', Array)
+#2 [internal function]: PetShop\Controller\AdminClienteController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\PetShop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(36): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): PetShop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 3
+[25-Nov-2022 21:32:56 America/Sao_Paulo] PHP Warning:  Undefined array key "created-at" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 8
+[25-Nov-2022 21:32:56 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 13
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $rows in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $cols in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $rows in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $cols in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $rows in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[28-Nov-2022 20:13:14 America/Sao_Paulo] PHP Warning:  Undefined variable $cols in C:\xampp\htdocs\projeto01\templates\blocks\form.php on line 103
+[30-Nov-2022 15:21:37 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'especificoes' in 'field list', na LINHA: 63, comando: \nINSERT INTO produtos (idmarca, nome, tipo, preco, quantidade, largura, altura, profundidade, peso, descricao, especificoes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nParâmetros:\narray (
+  'idmarca' => '1',
+  'nome' => 'Lasanha de forno',
+  'tipo' => 'Ração',
+  'preco' => '15.50',
+  'quantidade' => '23',
+  'largura' => '',
+  'altura' => '',
+  'profundidade' => '',
+  'peso' => '',
+  'descricao' => 'dkfdksfdsajkljasdkg',
+  'especificoes' => NULL,
+)
+[30-Nov-2022 15:22:14 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'especificoes' in 'field list', na LINHA: 63, comando: \nINSERT INTO produtos (idmarca, nome, tipo, preco, quantidade, largura, altura, profundidade, peso, descricao, especificoes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nParâmetros:\narray (
+  'idmarca' => '1',
+  'nome' => 'Lasanha de forno',
+  'tipo' => 'Ração',
+  'preco' => '15.50',
+  'quantidade' => '23',
+  'largura' => '',
+  'altura' => '',
+  'profundidade' => '',
+  'peso' => '',
+  'descricao' => 'dkfdksfdsajkljasdkg',
+  'especificoes' => NULL,
+)
